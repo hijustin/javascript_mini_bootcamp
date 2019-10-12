@@ -43,6 +43,13 @@ Before getting started, make sure that you have a JavaScript console open (like 
 
 4. Write a function `oldEnoughToDrink` that takes an `age` as an argument and
    returns `true` if the person with that age is old enough to drink.
+   
+//  function oldEnoughToDrink (age) {
+        if (age >= 21) {
+        return true;
+        }
+        return false;
+    }//
 
 5. There's an easy way to figure out how long a string is by adding `.length` to
    the end of it. Try this out in the console:
@@ -55,10 +62,24 @@ Before getting started, make sure that you have a JavaScript console open (like 
 
   Write a function `sameLength` that accepts two strings as arguments, and
   returns `true` if those strings have the same length, and `false` otherwise.
+  
+  // function sameLength (name1, name2) {
+  if (name1.length === name2.length) {
+  return true;
+}
+  return false;
+}//
 
 6. Write a function `passwordLongEnough` that accepts a "password" as a
    parameter and returns `true` if that password is *long enough* -- you get to
    decide what constitutes *long enough*.
+   
+// function passwordLongEnough (password) {
+  if (password.length >= 12) {
+  return true;
+}
+  return false;
+}//
 
 #### Conditionals: `if`
 
@@ -66,9 +87,27 @@ Before getting started, make sure that you have a JavaScript console open (like 
    and returns either "Go home, NAME.", or "Welcome, NAME!" (where NAME is the
    parameter that represents the person's name) depending on whether or not the
    person is old enough to drink.
+   
+// function oldEnoughToDrink (name, age) {
+  if (age >= 21) {
+    console.log("Welcome,", name);
+} else {
+  console.log("Go home,", name);
+}
+}//
 
 2. Write a function `max` that takes two numbers as arguments, and returns the
    larger one.
+   
+//function max (num1, num2) {
+  if (num1 > num2) {
+    return num1;
+  } else if (num1 === num2) {
+    console.log("Same!");
+  } else {
+    return num2;
+  }
+}//
 
 3. Write a function `min` that takes two numbers as arguments, and returns the
    smaller one.
@@ -106,6 +145,14 @@ Before getting started, make sure that you have a JavaScript console open (like 
 
     + `even`: returns `true` if its argument is even, and `false` otherwise.
     + `odd`: the opposite of the above.
+    
+ //function oddEven (num){
+  if ((num % 2) === 0) {
+    return `even`
+  } else {
+    return `odd`
+  }
+}//
     + `positive`: returns `true` if its argument is positive, and `false` otherwise.
     + `negative`: the opposite of the above.
 
