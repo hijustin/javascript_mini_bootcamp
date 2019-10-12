@@ -23,10 +23,14 @@ Before getting started, make sure that you have a JavaScript console open (like 
 
 2. Write a sentence in plain English describing how `square(square(15))` is
    evaluated.
+   
+   // 15 squared squared
 
 3. Rename `square`'s `num` parameter in your above code to `monkey`, and
    rename the uses of that parameter in the body to `monkey` as well. Will the
    function `square` still work? Why or why not?
+   
+   // no, monkey would need to be an integer or defined as an integer
 
 4. What is wrong with the following definitions of `square`? Write a sentence or
    two describing the issue(s); then, try copying the erroneous examples into a
@@ -38,14 +42,20 @@ Before getting started, make sure that you have a JavaScript console open (like 
    function square(monkey) {
      return x * x;
    }
+   
+   // monkey not an integer
 
    function square(5) {
      return 5 * 5;
    }
+   
+   // valid
 
    function square("x") {
      return "x" * "x";
    }
+   
+   // cannot multiply strings
    ```
 
 5. Fix the invalid syntax in the following functions (you can copy and paste these
@@ -55,13 +65,19 @@ Before getting started, make sure that you have a JavaScript console open (like 
    func square1(x {
      return x * x;
    }
+   
+   // needs to say function
 
    functionsquare2 x)
      return x * x;
    }
+   
+   // needs space after function, open/closed parenthesis/curlys
 
    function (x) square3 {
      return x * x;
+     
+   // square3 must be within {}, needs }
    ```
 
 6. The following functions exhibit poor style -- fix these issues using the
@@ -69,14 +85,26 @@ Before getting started, make sure that you have a JavaScript console open (like 
 
    ```js
    function square(x){return x*x;}
+   
+// function square(x) {
+   return x * x 
+}
 
    function square (x) { return x *x;
    }
+   
+// function square(x) {
+   return x * x
+}
 
    function square(x)
    {
    return x * x;
    }
+   
+// function square(x) {
+   return x * x
+}
    ```
 
 7. Complete the function `cube` that returns the cube of x:
@@ -86,6 +114,9 @@ Before getting started, make sure that you have a JavaScript console open (like 
     // your code here
   }
   ```
+// function cube (x) {
+   return x * x * x
+}
 
 8. Complete the function `fullName` that should take two parameters, `firstName`
    and `lastName`, and returns the `firstName` and `lastName` concatenated
