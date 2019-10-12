@@ -54,6 +54,19 @@ Before getting started, make sure that you have a JavaScript console open (like 
    scoreToGrade(95); // => 'A'
    scoreToGrade(72); // => 'C'
    ```
+//function scoreToGrade (score){
+  if (score >= 90 && score <= 100) {
+    return `A`
+  } else if (
+    score >= 80 && score <= 89) {
+    return `B`
+  } else if (
+    score >= 70 && score <= 79) {
+    return `C`
+  } else {
+    return `Invalid score`
+  }
+}//
 
 3. Modify the `scoreToGrade` function so that it returns `'INVALID SCORE'` if
    the score is greater than `100` or less than `0`.
